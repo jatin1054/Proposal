@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Proposal</title>
+      <link rel="stylesheet" href="date.css">
+</head>
+
+<body>
+
+    <div id="start" class="heading">This Proposal is designed by <span id="name">JATIN</span> only for you Babe...</div>
+
+    <div id="container">
+        <h1>Will You Date Me ?</h1><br><br>
+        <div id="btns">
+            <button id="yes" onclick="accepted()">YES</button>
+            <button id="hoverButton">NO</button>
+        </div>
+    </div>
+    <div class="accepted">
+        Thank You for Choosing Me !<br>You are really LUCKY !!
+
+        <img src="anime.png">
+    </div>
+
+    <script>
+        const hoverButton = document.getElementById('hoverButton');
+        hoverButton.addEventListener('mouseover', () => {
+            const newPositionX = Math.floor(Math.random() * (window.innerWidth - 1500)); // Change 1700 to button's width
+            const newPositionY = Math.floor(Math.random() * (window.innerHeight - 1000)); // Change 1000 to button's height
+            hoverButton.style.left = `${newPositionX}px`;
+            hoverButton.style.top = `${newPositionY}px`;
+        });
+        function accepted() {
+            document.querySelector(".accepted").style.display = "block";
+            document.getElementById("container").style.display = "none";
+            document.querySelector(".heading").style.display = "none";
+            document.body.style.backgroundColor = "brown";
+        }
+    </script>
+</body>
+
+</html>
