@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(0, 170, 170);
+    position: relative;
+    overflow: hidden;
+}
+
+
+#container {
+    background-color: antiquewhite;
+    display: block;
+    position: fixed;
+    width: 700px;
+    height: 500px;
+    padding: 50px;
+    margin-top: 100px;
+    margin-left: 1000px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 15px 15px 20px 0 rgb(117, 118, 117);
+}
+
+h1 {
+    font-size: 80px;
+    color: #2F4F4F;
+}
+
+#start {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 200px;
+    text-align: center;
+}
+
+#no {
+    font-size: 70px;
+    border: 10px solid black;
+    margin: 40px;
+    cursor: pointer;
+}
+
+#yes {
+    font-size: 70px;
+    position: fixed;
+    border: 10px solid black;
+    margin: 40px;
+    cursor: pointer;
+}
+
+#yes:hover {
+    animation: button 0.3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    0% {
+        font-size: 70px;
+    }
+
+    100% {
+        font-size: 90px;
+    }
+}
+
+#btns {
+    display: flex;
+    margin-left: 100px;
+}
+
+#hoverButton {
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 70px;
+    border: 10px solid black;
+    margin: 40px;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+.accepted {
+    display: none;
+    animation: fadeIn 1s;
+    color: white;
+    font-size: 150px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 300px;
+    text-align: center;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+#name {
+    color: #2F4F4F;
+    padding: 20px;
+    font-weight: 700;
+    background-color: antiquewhite;
+}
+img{
+    width: 763px;
+    height: 960px;
+}
+#back
+{
+    display:none;
+    background-color: #2F4F4F;
+}
+
+@media screen and (width <= 1080px)
+{
+    #start {
+        font-size: 70px;
+    }
+    #container {
+        background-color: antiquewhite;
+        display: block;
+        position: fixed;
+        width: 700px;
+        height: 500px;
+        padding: 50px;
+        margin-top: 100px;
+        margin-left: 100px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        box-shadow: 15px 15px 20px 0 rgb(117, 118, 117);
+    }
+}
