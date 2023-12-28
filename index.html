@@ -26,8 +26,8 @@
     <script>
         const hoverButton = document.getElementById('hoverButton');
         hoverButton.addEventListener('mouseover', () => {
-            const newPositionX = Math.floor(Math.random() * (window.innerWidth - 1500)); // Change 1700 to button's width
-            const newPositionY = Math.floor(Math.random() * (window.innerHeight - 1000)); // Change 1000 to button's height
+            const newPositionX = Math.floor(Math.random() * (window.innerWidth - 800)); // Change 1700 to button's width
+            const newPositionY = Math.floor(Math.random() * (window.innerHeight - 500)); // Change 1000 to button's height
             hoverButton.style.left = `${newPositionX}px`;
             hoverButton.style.top = `${newPositionY}px`;
         });
