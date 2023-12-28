@@ -2,6 +2,7 @@ body {
     background-color: rgb(0, 170, 170);
     position: relative;
     overflow: hidden;
+    margin:40px;
 }
 
 
