@@ -70,6 +70,7 @@ h1 {
 }
 
 #hoverButton {
+    display: block;
     position: relative;
     transition: all 0.3s ease;
     font-size: 70px;
@@ -79,12 +80,6 @@ h1 {
     cursor: pointer;
     margin: 0px;
    
-}
-
-#hoverButton:hover {
-    position: relative;
-    top: -100px;
-    left: -100px;
 }
 
 .accepted {
