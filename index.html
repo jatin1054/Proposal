@@ -2,8 +2,8 @@
 <html>
 
 <head>
-      <title>Proposal</title>
-      <link rel="stylesheet" href="date.css">
+    <title>Proposal</title>
+    <link rel="stylesheet" href="date.css">
 </head>
 
 <body>
@@ -14,9 +14,11 @@
         <h1>Will You Date Me ?</h1><br><br>
         <div id="btns">
             <button id="yes" onclick="accepted()">YES</button>
-            <button id="hoverButton">NO</button>
+            
         </div>
     </div>
+    <button id="hoverButton">NO</button>
+    
     <div class="accepted">
         Thank You for Choosing Me !<br>You are really LUCKY !!
 
@@ -24,13 +26,34 @@
     </div>
 
     <script>
+        // document.getElementById('hoverButton').style.position = 'absolute';
+        // document.getElementById('hoverButton').style.left = (window.innerWidth/2) - 900 + 'px';
+        // document.getElementById('hoverButton').style.top = (window.innerHeight/2) - 1700 + 'px';
         const hoverButton = document.getElementById('hoverButton');
         hoverButton.addEventListener('mouseover', () => {
-            const newPositionX = Math.floor(Math.random() * (window.innerWidth - 850)); // Change 1700 to button's width
-            const newPositionY = Math.floor(Math.random() * (window.innerHeight - 600)); // Change 1000 to button's height
+            const newPositionX = Math.floor(Math.random() * (window.innerWidth - 100)); // Change 1700 to button's width
+            const newPositionY = Math.floor(Math.random() * (window.innerHeight - 1000)); // Change 1000 to button's height
             hoverButton.style.left = `${newPositionX}px`;
             hoverButton.style.top = `${newPositionY}px`;
         });
+
+        // document.getElementById('hoverButton').style.position = 'absolute';
+        // document.getElementById('hoverButton').style.left = (window.innerWidth) - 1300 + 'px';
+        // document.getElementById('hoverButton').style.top = (window.innerHeight) - 530 + 'px';
+
+        // // Next, add an event listener for the mousemove event on the button
+        // document.getElementById('hoverButton').addEventListener('mousemove', function () {
+        //     var newPositionX = Math.floor(Math.random() * (window.innerWidth - this.clientWidth));
+        //     var newPositionY = Math.floor(Math.random() * (window.innerHeight - this.clientHeight));
+        //     this.style.left = newPositionX + 'px';
+        //     this.style.top = newPositionY + 'px';
+        // });
+
+        // // Finally, add an event listener for the mouseout event on the button
+        // document.getElementById('hoverButton').addEventListener('mouseout', function () {
+        //     this.style.left = (window.innerWidth / 2) - 1200 + 'px';
+        //     this.style.top = (window.innerHeight / 2) - 500 + 'px';
+        // });
         function accepted() {
             document.querySelector(".accepted").style.display = "block";
             document.getElementById("container").style.display = "none";
